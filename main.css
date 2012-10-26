@@ -1,0 +1,122 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+	outline: none;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;}
+
+body {
+    background: #acdef2;
+    padding-top: 100px;
+}
+
+.trash {
+    width: 128px;
+    height: 128px;
+    background: url(http://png-2.findicons.com/files//icons/1580/devine_icons_part_2/128/trash_recyclebin_empty_closed.png) no-repeat;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    opacity: .5;
+    z-index: 0;
+}
+
+.trash.hover {
+    opacity: 0.8;
+}
+
+.wrap {
+    width: 400px;
+    margin: 0 auto 100px;
+}
+
+.wrap h1 {
+    font: bold 36px Helvetica;
+    text-align: center;
+}
+
+.todo {
+    margin-top: 20px;
+}
+
+.todo li {
+    background: -webkit-linear-gradient(top, #fff 0%,#eee 100%);
+    padding: 20px;
+    font: 20px Helvetica;
+    z-index: 1;
+    position: relative;
+}
+
+.todo li span {
+    outline: none;
+}
+
+.todo li .check {
+    width: 20px;
+    height: 20px;
+    background: #aaa;
+    content: '';
+    display: block;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.todo li .handle {
+    width: 20px;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: .1;
+    cursor: pointer;
+}
+
+.todo li.new {
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.todo li.done {
+    color: #080;
+    background: -webkit-linear-gradient(top, #cf9 0%,#9f8 100%);
+}
+
+.todo li.done .check {
+    background: #6a0;
+}
+
+.todo li.urgent {
+    color: #c00;
+    background: -webkit-linear-gradient(top, #fc9 0%,#f98 100%);
+}
+
+.todo li.urgent .check {
+    background: #d00;
+}
+​
